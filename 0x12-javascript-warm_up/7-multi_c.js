@@ -1,16 +1,9 @@
 #!/usr/bin/node
-/* writes "c is fun" x times */
-
-const args = process.argv.slice(2);
-
-const line = 'c is fun';
-
-const num = parseInt(args[0]);
-
-if (isNaN(num)) {
+const x = Math.floor(Number(process.argv[2]));
+if (isNaN(x)) {
   console.log('Missing number of occurrences');
 } else {
-  for (let i = 0; i < num; i++) {
-    console.log(line);
+  for (let i = 0; i < x; i++) {
+    console.log('C is fun');
   }
 }
